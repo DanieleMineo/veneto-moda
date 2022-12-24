@@ -1,0 +1,3137 @@
+/* Regole generali e collegamenti ai font*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+        font-family: 'Montserrat', 'sans-serif';
+        background-color: #1e1e23;
+        color: #dadada;
+}
+
+/* Regole per fascia promo e lingue */
+
+div#fascia-promo-lingue {
+        min-width: 1920px;
+        position: relative;
+        top: 0;
+        left: 0;
+        background-color: #1a1a1f;
+        z-index: 990;
+}
+
+div#sottofascia-promo-lingue {
+        width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        height: 25px;
+        align-items: center;
+}
+
+div#sottofascia-promo-lingue span {
+        letter-spacing: 2px;
+        margin: 0 auto;
+}
+
+div#sottofascia-promo-lingue div.lingue {
+       margin-right: 1rem;
+}
+
+div#sottofascia-promo-lingue div.lingue a {
+        text-decoration: none;
+        color: #dadada;
+}
+
+/* Regole per fascia menu */
+
+div#fascia-menu {
+        min-width: 1920px;
+        width: 100%;
+        position: absolute;
+        z-index: 10;     
+}
+
+div#fascia-menu div#sottofascia-menu {
+        width: 1920px;
+        height: 120px;
+        padding: 0 110px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+a#logo {
+        display: block;
+        width: 100px;
+        height: 100px;
+}
+
+/* nav#menu div#menu-principale {
+        position: fixed;
+        top: 65px;
+        right: 110px;
+} */
+
+
+nav#menu ul#principale{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+}
+
+nav#menu ul#principale li {
+        height: 25px;
+        line-height: 25px;
+        margin-left: 60px;
+}
+
+nav#menu ul#principale li a{
+        color: #dadada;
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 2px;
+}
+
+a.current {
+        color: #b8a076 !important;
+}
+
+nav#menu ul#principale li a:hover {
+        color: rgba(218, 218, 218, 0.8);
+}
+
+nav#menu ul#secondario{
+        display: none;
+        list-style-type: none;
+        background-color: #1e1e23;
+        z-index: 999;
+}
+
+nav#menu ul#secondario li {
+        height: 25px;
+        line-height: 25px;
+        margin-left: 0;
+}
+
+nav#menu ul#secondario li a{
+        display: block;
+        text-align: left;
+}
+
+nav#menu ul#secondario li:hover{
+        color: #dadada;
+        background-color: #b8a076;
+}
+
+nav#menu ul#principale li:hover ul#secondario {
+        display: block;
+}
+
+/* ========= HAMBURGER MENU ==================== */
+
+div#hamburger-menu {
+        display: none;
+}
+
+/* Hamburger button */
+
+.hamburger {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 36px;
+        height: 36px;
+        z-index: 990;
+        background-color: rgba(184, 160, 118, 0.8);
+        padding: 10px 10px;
+        border-radius: 50%;
+        top: 40px;
+        right: 50px;
+}
+
+.hamburger .bar {
+        width: 100%;
+        height: 2px;
+        background-color: #dadada;
+        -webkit-transition: all 0.25s ease-in-out;
+        transition: all 0.25s ease-in-out;
+}
+
+.hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Mobile Menu */
+
+.mobile-menu {
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        z-index: 99;
+        width: 100%;
+        height: 100%;
+        background-color: #1e1e23;
+        transition: all .6s;
+        transform: translateX(100%);
+}
+
+.wide{
+        transform: translateX(0);
+}
+
+.mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px 0 50px;
+}
+
+.mobile-menu li {
+        list-style: none;
+        padding: .8rem;
+}
+
+.mobile-menu li a {
+        color: #dadada;
+        text-decoration: none;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+}
+
+.mobile-menu div.lingue {
+        margin: 0 auto 50px;
+        text-align: center;
+}
+
+.mobile-menu div.lingue span{
+        color: #b8a076;
+        font-size: 20px;
+}
+
+.mobile-menu div.lingue a{
+        color: #b8a076;
+        text-decoration: none;
+        font-size: 20px;
+}
+
+.mobile-menu .social-container {
+        bottom: 10px;
+        margin: 0 auto;
+}
+
+ul#sottomenu {
+        margin: 0;
+        text-align: center;
+        display: none;
+}
+
+ul#sottomenu li {
+        padding: 10px;
+}
+
+ul#sottomenu li#man{
+        padding-top: 20px;
+}
+
+/* ==============FINE REGOLE MENU HAMBURGER =============  */
+
+/* regole sezione swiper */
+
+div.boxtitolo {
+        text-transform: uppercase;
+        width: 71%;
+        margin: 0 auto;
+}
+
+div.boxtitolo div.span {
+        display: flex;
+        align-items: center;
+        color: #b8a076;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+}
+
+div.line-hor{
+        width: 100px;
+        height: 1px;
+        margin-right: 10px;
+        background-color: #b8a076;
+}
+
+div.boxtitolo h2 {
+        font-size: 70px;
+        letter-spacing: 10px;
+        font-weight: 400;
+        margin-bottom: 20px;
+}
+
+div.boxtitolo h3 {
+        font-size: 40px;
+        letter-spacing: 6px;
+        font-weight: 400;
+        margin-bottom: 35px;
+}
+
+div.boxtitolo a {
+        display: block;
+        color: #dadada;
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-align: center;
+        width: 275px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 5px;
+        background-color: #b8a076;
+}
+
+div.boxtitolo a:hover {
+        background-color: #c1ab85;  
+}
+
+/* regole fascia chi siamo */
+
+section#fascia-chi-siamo {
+        min-width: 1920px;
+}
+
+div#sottofascia-chi-siamo {
+        width: 1920px;
+        height: 800px;
+        margin: -25px auto 0;
+        text-align: center;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+}
+
+div.line-ver {
+        width: 1px;
+        height: 70px;
+        margin: 0 auto;
+        background-color: #b8a076;
+}
+
+div#sottofascia-chi-siamo h1 {
+        text-transform: uppercase;
+        font-size: 58px;
+        font-weight: 400;
+        letter-spacing: 8px;
+}
+
+div#sottofascia-chi-siamo p {
+      padding: 0 15rem;
+      font-size: 18px;
+      font-weight: 200;
+      letter-spacing: 1px;
+      line-height: 24px;
+}
+
+div#sottofascia-chi-siamo a {
+        display: block;
+        color: #dadada;
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        width: 275px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 5px;
+        background-color: #b8a076;
+}
+
+div#sottofascia-chi-siamo a:hover {
+        background-color: #c1ab85;
+}
+
+/* regole sezione collezioni */
+
+section.fascia-coll {
+        width: 100%;
+        height: 960px;
+        min-width: 1920px;
+        background-color: #1a1a1f;
+        display: flex;
+}
+
+.descrizione-coll {
+        width: 50%;
+        padding: 120px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.descrizione-coll h2 {
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        /* margin: 50px 0 60px; */
+}
+
+.descrizione-coll p {
+        width: 480px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        line-height: 30px;
+        font-weight: 200;
+        text-align: center;
+}
+
+.descrizione-coll a {
+        display: block;
+        color: #dadada;
+        font-size: 30px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        width: 225px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 5px;
+        background-color: #b8a076;
+}
+
+.descrizione-coll a:hover {
+        background-color: #c1ab85;
+}
+
+section.fascia-coll div#bgimg-man {
+        background-image: url(../img/man-section.jpeg);
+        background-size: cover;
+        width: 50%;
+}
+
+section.fascia-coll div#bgimg-woman {
+        background-image: url(../img/woman-section.jpeg);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+}
+
+section.fascia-coll div#bgimg-kid {
+        background-image: url(../img/kid-section.jpeg);
+        background-size: cover;
+        background-position: right 20%;
+        width: 50%;
+}
+
+/* regole sezione brand */
+
+section#fascia-brand {
+        min-width: 1920px;
+}
+
+section#fascia-brand div#sottofascia-brand {
+        width: 1920px;
+        height: 950px;
+        padding: 100px 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content: space-between;
+}
+
+section#fascia-brand div#sottofascia-brand h2 {
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase; 
+}
+
+div#brand-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+}
+
+.row-brand {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        justify-content: space-between;
+}
+
+.row-brand img {
+        transition: transform 0.5s;
+}
+
+.row-brand img:hover {
+        transition: transform 0.5s;
+        transform: scale(1.1);
+}
+
+div#row-1 {
+        margin-bottom: 120px;
+}
+
+/* regole sezione news */
+
+section#fascia-news {
+        min-width: 1920px;
+        background-color: #1a1a1f;
+}
+
+div#sottofascia-news {
+        width: 1920px;
+        height: 1300px;
+        padding: 100px 140px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+#row-news {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+div#sottofascia-news h2 {
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+}
+
+.news-container {
+        width: 500px;
+        display: flex;
+        transition: transform .5s;
+}
+
+.news-container:hover {
+        transform: scale(1.1);
+        transition: transform .5s;   
+}
+
+.news-img {
+        width: 250px;
+        height: 250px;
+        background-size: cover;
+}
+
+.news {
+        width: 250px;
+        background-color: #1e1e23;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 15px;
+}
+
+.titolo-news {
+        text-align: center;
+}
+
+.news h3 {
+        font-size: 18px;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        font-weight: 400;
+}
+
+.news span {
+        font-size: 14px;
+        font-weight: 200;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+}
+
+.news p {
+        text-align: center;
+        font-size: 15px;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+        font-weight: 200;
+}
+
+.news a {
+        display: block;
+        color: #dadada;
+        font-size: 15px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-transform: uppercase;
+        text-align: center;
+        width: 140px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 3px;
+        /* background-color: #b8a076;  */
+        border: 1px solid #b8a076;
+}
+
+.news a:hover {
+        background-color: #c1ab85;
+}
+
+#news-img-woman {
+        background-image: url(../img/news-woman.jpg);
+        background-position: 50% 10%;
+}
+#news-img-man {
+        background-image: url(../img/news-man.jpeg);
+        background-position: 50% 80%;
+}
+#news-img-kid {
+        background-image: url(../img/news-kid.jpeg);
+        background-position: 0% 50%;
+}
+
+#sottofascia-news a#tutte-le-news {
+        display: block;
+        margin: 0 auto;
+        color: #dadada;
+        font-size: 25px;
+        font-weight: 200;
+        letter-spacing: 2px;
+        text-decoration: none;
+        text-align: center;
+        text-transform: uppercase;
+        width: 275px;
+        height: 60px;
+        line-height: 60px;
+        border-radius: 5px;
+        background-color: #b8a076;  
+}
+
+#sottofascia-news a#tutte-le-news:hover {
+        background-color: #c1ab85;
+}
+
+/* regole form */
+
+#form-container {
+        height: 250px;
+        border: 1px solid #dadada;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 50px;
+}
+
+#form-title {
+        margin-right: 35px;
+}
+
+#form-title h3 {
+        font-size: 40px;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        font-weight: 400;
+        margin-bottom: 25px;
+}
+
+#form-title p {
+        font-size: 25px;
+        letter-spacing: 2px;
+        font-weight: 200;
+}
+
+/* CHECKBOX STYLE */
+/* ----------------------------------------------------------- */
+
+div#checkbox {
+        text-align: left;
+        margin-bottom: 10px;
+}
+
+div#checkbox a {
+        color: #b8a076;
+}
+
+/* Personalizzo il label e quindi il contenitore dell'input */
+.checkbox-wrapper {
+        display: block;
+        width: 500px;
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        color: #dadada;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+        font-weight: 200;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+}
+
+/* Nascondo il checkbox di base del browser */
+.checkbox-wrapper input {
+        position: relative;
+        right: 450px;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+}
+
+/* creo il mio checkbox */
+.checkbox-wrapper .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 15px;
+        width: 15px;
+        background-color: transparent;
+        border: 1px solid #b8a076;
+}
+
+/* Creo la spunta all'interno dell'input (inizialmente nascosta) */
+.checkbox-wrapper .checkmark::after {
+        content: "";
+        position: absolute;
+        left: 3px;
+        top: 0px;
+        width: 5px;
+        height: 8px;
+        border: 1px solid #dadada;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        display: none;
+}
+
+/* Quando l'input è selezionato, coloro il bordo dell'input */
+.checkbox-wrapper input:checked ~ .checkmark {
+        border-color: #b8a076;
+        background-color: #b8a076;
+}
+
+/* Quando l'input è selezionato mostro la spunta */
+.checkbox-wrapper input:checked ~ .checkmark::after {
+        display: block;
+}
+
+div#email-submit {
+        display: flex;
+        justify-content: space-between;
+}
+
+/* EMAIL STYLE */
+/* ----------------------------------------------------------- */
+
+div#form-container form input[type="email"] {
+        width: 545px;
+        height: 50px;
+        margin-right: 35px;
+        background-color: transparent;
+        border: 1px solid #b8a076;
+        color: #dadada;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 200;
+        padding: 12px;
+        /* -webkit-transition: 0.5s;
+        transition: 0.5s; */
+        outline: none;
+}
+
+div#form-container form input[type="email"]::placeholder {
+        color: #dadada;
+        opacity: .8;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+}
+
+div#form-container form input[type="email"]:focus {
+        border: 2px solid #c1ab85;
+}
+
+/* SUBMIT STYLE */
+/* ----------------------------------------------------------- */
+
+div#form-container form input[type="submit"] {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: #b8a076;
+        color: #dadada;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: 1px;
+}
+
+div#form-container form input[type="submit"]:hover {
+        background-color: #c1ab85;
+        cursor: pointer;
+}
+
+/* regole footer */
+
+
+footer#footer {
+        min-width: 1920px;
+}
+
+footer#footer div#sottofascia-footer {
+        width: 1920px;
+        padding: 100px 140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+}
+
+footer#footer div#sottofascia-footer div#contatti {
+        display: flex;
+        width: 390px;
+        flex-direction: column;
+        align-items: flex-start;
+}
+
+footer#footer div#sottofascia-footer div#contatti span,
+footer#footer div#sottofascia-footer div#orari-negozio span {
+        font-size: 20px;
+        letter-spacing: 1px;
+        display: block;
+        margin-bottom: 20px;
+        color: #dadada;
+        font-weight: 200;
+}
+
+footer#footer div#sottofascia-footer div#contatti h4,
+footer#footer div#sottofascia-footer div#orari-negozio h4, 
+.social-container h4{
+        font-size: 25px;
+        letter-spacing: 1px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        color: #dadada;
+}
+
+.social-container {
+        width: 160px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+}
+
+.social-container .socials {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+}
+
+.social-container .socials a {
+        display: block;
+        width: 40px;
+        height: 40px;
+}
+
+.social-container .socials a img {
+        display: block;
+        width: 40px;
+        height: 40px;
+        transition: transform 0.5s;
+}
+
+.social-container .socials a img:hover {
+        transform: scale(1.1);
+        transition: transform 0.5s;
+}
+
+
+
+.social-container img {
+        display: block;
+        width: 160px;
+        height: 160px;
+}
+
+
+
+footer#footer div#sottofascia-footer div#orari-negozio {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 390px;
+}
+
+footer#footer div#sottofascia-footer div#contatti span a{
+        color: #dadada;
+        text-decoration: none;
+}
+
+footer#footer div#sottofascia-footer div#contatti span a:hover {
+        color: rgba(218, 218, 218, 0.8);
+}
+
+/* regole fascia legal term */
+
+div#fascia-legalterm {
+        min-width: 1920px;
+        background-color: #1a1a1f;
+}
+
+div#fascia-legalterm div#sottofascia-legalterm {
+        width: 1920px;
+        height: 30px;
+        padding: 0 140px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+div#sottofascia-legalterm a,
+div#sottofascia-legalterm span {
+        color: #dadada;
+        font-size: 16px;
+        font-weight: 200;
+        display: block;
+}
+
+div#sottofascia-legalterm a:hover {
+        color: rgba(218, 218, 218, 0.8);
+}
+
+
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+/* =========CHI-SIAMO=======CHI-SIAMO============CHI-SIAMO====== */
+
+section#fascia-banner {
+        min-width: 1920px;
+        margin-top: 195px;
+}
+
+div#sottofascia-banner {
+        width: 1920px;
+        margin: 0 auto;
+        padding: 0 140px;
+}
+
+div#sottofascia-banner div.span {
+        display: flex;
+        align-items: center;
+        color: #b8a076;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+}
+
+div#sottofascia-banner h2{
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase; 
+        margin-bottom: 50px;     
+}
+
+div#banner-img {
+        width: 100%;
+        height: 700px;
+        background-image: url(../img/chi-siamo-banner.jpg);
+        background-position: center;
+        background-size: cover;
+}
+
+/* sezione storia */
+
+#storia {
+        background-color: #1a1a1f;
+        height: 2800px;
+        min-width: 1920px;
+}
+
+#sottofascia-storia {
+        width: 1920px;
+        margin: 0 auto;
+        padding: 100px 140px;
+}
+
+#storia .line-ver {
+        height: 2550px;
+        position: absolute;
+        left: 50%;
+}
+
+.descrizione-annata {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+}
+
+div.descrizione-annata h2{
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase;    
+}
+
+div.descrizione-annata p{
+        font-size: 16px;
+        letter-spacing: 1px;
+        font-weight: 200;
+}
+
+div.descrizione-annata div.span {
+        display: flex;
+        align-items: center;
+        color: #b8a076;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+}
+
+div.descrizione-annata div.span div.line-hor{
+        width: 30px;
+        height: 1px;
+        background-color: #b8a076;
+}
+
+#fascia-2012,
+#fascia-2020 {
+        width: 1170px;
+        height: 635px;
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 0;
+        justify-content: space-between;
+        align-items: center;
+}
+
+#fascia-2015,
+#fascia-2018 {
+        width: 1170px;
+        height: 635px;
+        margin: 0 auto;
+        display: flex;
+        padding: 50px 0;
+        justify-content: space-between;
+        align-items: center;
+}
+
+#fascia-2012 .img-annata {
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/chi-siamo-1.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-right: 100px;
+}
+
+#fascia-2015 .img-annata {
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/chi-siamo-2.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-left: 100px;
+}
+
+#fascia-2018 .img-annata {
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/chi-siamo-3.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-right: 100px;
+}
+
+#fascia-2020 .img-annata {
+        width: 50%;
+        height: 100%;
+        background-image: url(../img/chi-siamo-4.jpg);
+        background-size: cover;
+        background-position: center;
+        margin-left: 100px;
+}
+
+#fascia-2015 .descrizione-annata,
+#fascia-2020 .descrizione-annata {
+        align-items: flex-end;
+}
+
+#fascia-2015 .descrizione-annata p,
+#fascia-2020 .descrizione-annata p{
+        text-align: right;
+}
+
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+
+.collection-container {
+        min-width: 1920px;
+        background-color: #1a1a1f;
+}
+
+.collection-sottocontainer {
+        width: 1920px;
+        margin: 0 auto;
+        display: flex;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 200px 100px 100px;
+}
+
+.collection {
+        /* padding: 50px; */
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.miniature {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+}
+
+.miniature a img {
+        width: 14rem;
+        height: 14rem;
+        object-fit: cover;
+        margin: 0 1rem 1rem 0;
+        filter: opacity(60%);
+        transition: filter 0.3s;
+}
+
+.miniature a img:hover {
+        filter: none;
+        transition: filter 0.3s;   
+}
+
+.preview {
+        width: 46%;
+}
+
+.swiper-box {
+        top: 0;
+        height: 900px;
+}
+
+.collection-descr div.span {
+        display: flex;
+        align-items: center;
+        color: #b8a076;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+}
+
+.collection-descr h2{
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase; 
+        margin-bottom: 50px;     
+}
+
+.collection-descr p {
+        letter-spacing: 2px;
+        font-size: 20px;
+        line-height: 25px;
+        font-weight: 200;
+}
+
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+
+.tuttelenews-container {
+        min-width: 1920px;
+        background-color: #1a1a1f;
+}
+
+.tuttelenews-sottocontainer {
+        width: 1920px;
+        margin: 0 auto;
+        padding: 200px 100px 100px;
+}
+
+.tuttelenews-sottocontainer  div.span {
+        display: flex;
+        align-items: center;
+        color: #b8a076;
+        letter-spacing: 3px;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+}
+
+.tuttelenews-sottocontainer  h1{
+        font-size: 50px;
+        letter-spacing: 5px;
+        font-weight: 400;
+        text-transform: uppercase; 
+        margin-bottom: 150px;     
+}
+
+.tuttelenews {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+}
+
+.tuttelenews aside {
+        width: 20%;
+        display: flex;
+        flex-direction: column;
+}
+
+.novita-miniatura {
+        width: 300px;
+        margin-bottom: 75px;
+        background-color: #1e1e23;
+}
+
+.novita-miniatura img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        object-position: top;
+
+}
+
+.testo-miniatura {
+        width: 100%;
+        padding: 10px;
+}
+
+.testo-miniatura h3 {
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 400;
+        color: #b8a076;
+        margin-bottom: 30px;
+}
+
+.testo-miniatura p {
+        font-weight: 200;
+        margin-bottom: 30px;
+}
+
+.testo-miniatura span {
+        display: block;
+        text-align: end;
+        font-weight: 200;
+        font-style: italic;
+}
+
+.tuttelenews .notizia-aperta {
+        width: 75%;
+        background-color: #1e1e23;
+}
+
+.tuttelenews .notizia-aperta img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: center;
+        margin-bottom: 100px;
+}
+
+.titolo-autore {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 100px;
+}
+
+.autore {
+        width: 50px;
+        height: 50px;
+        background-color: #b8a076;
+        border-radius: 50%;
+}
+
+.tuttelenews .notizia-aperta h2 {
+        text-transform: uppercase;
+        color: #b8a076;
+        letter-spacing: 2px;
+        font-size: 30px;
+        font-weight: 400;
+        margin-bottom: 50px;
+}
+
+
+.multi-column {
+        -moz-column-count:2;
+        -webkit-column-count:2;
+        column-count:2;
+        column-gap:50px;
+        padding: 0 100px 100px;
+        font-weight: 200;
+        line-height: 20px;
+}
+
+.multi-column p {
+        margin-bottom: 30px;
+}
+
+.multi-column hr {
+        background-color: #dadada;
+        margin-bottom: 100px;
+}
+
+.multi-column .italic {
+        font-style: italic;
+        font-size: 20px;
+}
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+/* ---------------------LAYOUT RESPONSIVE---------------------------- */
+
+/* =========LAPTOP=======LAPTOP============LAPTOP====== */
+
+@media only screen and (min-width: 1100px) and (max-width: 1919px) {
+        div#fascia-promo-lingue {
+                min-width: 1100px;
+                font-size: 14px;
+        }   
+        
+        div#sottofascia-promo-lingue {
+                height: 20px;
+                width: 1100px;
+        }
+
+        div#fascia-menu {
+                min-width: 1100px;  
+        }
+
+        div#fascia-menu div#sottofascia-menu {
+                width: 1100px;
+                padding: 0 80px; 
+        }
+
+        
+
+        /* ======== BOX TITOLO ======== */
+
+        div.boxtitolo div.span {
+                letter-spacing: 2px;
+                margin-bottom: 0;
+                font-size: 14px;
+        }
+
+        div.line-hor{
+                width: 50px;
+                height: 1px;
+                margin-right: 5px;
+        }
+
+        div.boxtitolo h2 {
+                font-size: 50px;
+                letter-spacing: 6px;
+                margin-bottom: 10px;
+        }
+
+        div.boxtitolo h3 {
+                font-size: 30px;
+                letter-spacing: 3px;
+                margin-bottom: 20px;
+        }
+
+        div.boxtitolo a {
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 170px;
+                height: 40px;
+                line-height: 40px;
+        }
+
+        /* ======== CHI SIAMO ======== */
+
+        section#fascia-chi-siamo {
+                min-width: 1100px;
+        }
+
+        section#fascia-chi-siamo div#sottofascia-chi-siamo{
+                width: 1100px;
+        }
+
+        div#sottofascia-chi-siamo h1 {
+                font-size: 45px;
+                letter-spacing: 4px;
+        }
+
+        div#sottofascia-chi-siamo p {
+                font-size: 20px;
+                line-height: 30px;
+                padding: 0;
+                margin: 0 auto;
+        }
+
+        div#sottofascia-chi-siamo a {
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 200px;
+                height: 40px;
+                line-height: 40px;
+        }
+
+
+        /* ===== COLLEZIONE ====== */
+
+        section.fascia-coll {
+                height: 550px;
+                min-width: 1100px;
+        }
+
+        div.line-ver {
+                height: 45px;
+        }
+
+        .descrizione-coll {
+                width: 50%;
+                padding: 75px;
+        }
+
+        .descrizione-coll h2 {
+                font-size: 35px;
+                letter-spacing: 3px;
+        }
+
+        .descrizione-coll p {
+                font-size: 16px;
+                line-height: 24px;
+        }
+
+        .descrizione-coll a {
+                font-size: 20px;
+                letter-spacing: 2px;
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+        }
+
+        /* ===== BRAND ====== */
+
+        section#fascia-brand {
+                min-width: 1100px;
+        }
+
+        section#fascia-brand div#sottofascia-brand {
+                width: 1100px;
+                height: 800px;
+                padding: 100px 50px;
+        }
+
+        section#fascia-brand div#sottofascia-brand h2 {
+                font-size: 35px;
+                letter-spacing: 2px;
+        }
+
+        .row-brand {
+                height: 85px;
+        }
+
+        div#row-1 {
+                margin-bottom: 60px;
+        }
+
+        /* ===== NEWS ====== */
+
+        section#fascia-news {
+                min-width: 1100px;
+        }
+
+        div#sottofascia-news {
+                width: 100%;
+                height: 1500px;
+                padding: 100px;
+        }
+
+        div#sottofascia-news h2 {
+                font-size: 35px;
+                letter-spacing: 3px;
+        }
+
+        #row-news {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 30px;
+        }
+
+
+        .news-container {
+                width: 300px;
+                flex-direction: column;
+        }
+
+
+        .news-img {
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+        }
+
+        .news {
+                width: 300px;
+                padding: 25px;
+        }
+
+        .titolo-news {
+                text-align: center;
+                margin-bottom: 25px;
+        }
+        
+        .news h3 {
+                font-size: 20px;
+        }
+
+        #sottofascia-news a#tutte-le-news {
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 200px;
+                height: 40px;
+                line-height: 40px;
+                margin-top: 0;
+                margin-bottom: 50px;
+        }
+
+        /* ===== FORM ====== */
+
+        #form-container {
+                height: 180px;
+                padding: 0 30px;
+                justify-content: space-between;
+        }
+        
+        #form-title {
+                margin-right: 20px;
+        }
+        
+        #form-title h3 {
+                font-size: 25px;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-weight: 400;
+                margin-bottom: 10px;
+        }
+        
+        #form-title p {
+                font-size: 18px;
+                letter-spacing: 1px;
+                font-weight: 200;
+        }
+
+        .checkbox-wrapper {
+                width: 500px;
+                padding-left: 25px;
+                font-size: 14px;
+                font-weight: 200;
+        }
+
+        div#form-container form input[type="email"] {
+                width: 370px;
+                height: 35px;
+                margin-right: 20px;
+                font-size: 14px;
+                font-weight: 200;
+                padding: 12px;
+        }
+
+        div#form-container form input[type="email"]::placeholder {
+                font-size: 14px;
+        }
+
+        div#form-container form input[type="submit"] {
+                width: 130px;
+                height: 35px;
+                font-size: 20px;
+        }
+
+        /* ===== FOOTER ====== */
+
+        footer#footer {
+                min-width: 1100px;
+        }
+        footer#footer div#sottofascia-footer{
+                width: 1100px;
+        }
+
+        footer#footer div#sottofascia-footer {
+                padding: 100px;
+        }
+
+        footer#footer div#sottofascia-footer div#contatti {
+                width: 280px;
+        }
+        
+        footer#footer div#sottofascia-footer div#contatti span,
+        footer#footer div#sottofascia-footer div#orari-negozio span {
+                font-size: 16px;
+                margin-bottom: 15px;
+        }
+        
+        footer#footer div#sottofascia-footer div#contatti h4,
+        footer#footer div#sottofascia-footer div#orari-negozio h4, 
+        .social-container h4{
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-bottom: 30px;
+        }
+
+        .social-container {
+                width: 150px;
+        }
+
+        .social-container .socials {
+                margin-bottom: 30px;
+        }
+
+        .social-container .socials a {
+                width: 30px;
+                height: 30px;
+        }
+
+        .social-container .socials a img{
+                width: 30px;
+                height: 30px;
+        }
+
+        .social-container img {
+                width: 150px;
+                height: 150px;
+        }
+
+        footer#footer div#sottofascia-footer div#orari-negozio {
+                width: 280px;
+        }
+        
+
+         /* ===== LEGAL TERM ====== */
+
+        div#fascia-legalterm {
+                min-width: 1100px;
+        }
+
+        div#fascia-legalterm div#sottofascia-legalterm {
+                width: 1100px;
+                height: 20px;
+                padding: 0 50px;
+        }
+
+        div#sottofascia-legalterm a,
+        div#sottofascia-legalterm span {
+                font-size: 14px;
+        }
+
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+
+        section#fascia-banner {
+                min-width: 1100px;
+        }
+        
+        div#sottofascia-banner {
+                width: 1100px;
+                padding: 0 140px;
+        }
+        
+        #storia {
+                background-color: #1a1a1f;
+                height: 2400px;
+                min-width: 1100px;
+        }
+        
+        #sottofascia-storia {
+                width: 1100px;
+                margin: 0 auto;
+                padding: 100px 80px;
+        }
+
+        #sottofascia-storia .line-ver{
+                height: 2220px;
+        }
+
+        #fascia-2012,
+        #fascia-2020 {
+                width: 100%;
+                height: 550px;
+        }
+
+        #fascia-2015,
+        #fascia-2018 {
+                width: 100%;
+                height: 550px;
+        }
+
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+
+        .collection-container {
+                min-width: 1100px;
+        }
+
+        .collection-sottocontainer {
+                width: 1100px;
+                padding: 200px 50px 50px;
+        }
+
+        .miniature a img {
+                width: 8rem;
+                height: 8rem;
+        }
+
+        .preview {
+                width: 48%;
+        }
+
+        .swiper-box {
+                top: 0;
+                height: 700px;
+        }
+
+        .collection-descr div.span .line-hor {
+                width: 30px;
+        }
+
+        .collection-descr div.span {
+                font-size: 12px;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+        }
+
+        .collection-descr h2{
+                font-size: 30px;
+                letter-spacing: 3px;
+                margin-bottom: 30px;     
+        }
+
+        .collection-descr p {
+                letter-spacing: 1px;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 200;
+        }
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+
+        .tuttelenews-container {
+                min-width: 1100px;
+        }
+
+        .tuttelenews-sottocontainer {
+                width: 1100px;
+                margin: 0 auto;
+                padding: 200px 50px 100px;
+        }
+
+        .tuttelenews-sottocontainer  h1{
+                font-size: 40px;
+                letter-spacing: 4px;
+                margin-bottom: 100px;     
+        }
+
+        .tuttelenews aside {
+                width: 30%;
+        }
+
+        .novita-miniatura {
+                width: 250px;
+                margin-bottom: 50px;
+        }
+
+        .novita-miniatura img {
+                width: 100%;
+                height: 180px;
+        }
+
+        .tuttelenews .notizia-aperta {
+                width: 70%;
+                background-color: #1e1e23;
+        }
+
+        .tuttelenews .notizia-aperta img {
+                height: 350px;
+                margin-bottom: 50px;
+        }
+
+        .titolo-autore {
+                display: flex;
+                justify-content: space-between;
+                padding: 0 50px;
+        }
+
+        .multi-column {
+                padding: 0 50px 50px;
+                font-weight: 200;
+        }
+        
+}
+/* =========TABLET=======TABLET============TABLET====== */
+
+@media only screen and (min-width: 768px) and (max-width: 1099px) {
+
+        div#fascia-promo-lingue { 
+                display: none; 
+        }
+
+        /* ======== MENU ========= */
+
+        div#menu-principale {
+                display: none;
+        }
+
+        div#hamburger-menu {
+                display: block;
+        }
+
+        div#fascia-menu { 
+                min-width: 768px; 
+        }
+        div#fascia-menu div#sottofascia-menu { 
+                width: 768px; 
+                height: 80px;
+                margin: 25px auto 0;
+                padding: 0 50px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        a#logo {
+                width: 80px;
+                height: 80px;
+        }
+
+        a#logo img{
+                width: 80px;
+                height: 80px;
+        }
+
+        nav#menu ul#principale li {
+                margin-left: 20px;
+        }
+
+        nav#menu ul#principale li a{
+                font-size: 14px;
+        }
+
+        nav#menu ul#secondario li {
+                margin-left: 0;
+        }
+
+        /* ============= SWIPER ============ */
+
+        div.boxtitolo {
+                margin: 0 auto;
+        }
+
+        div.boxtitolo div.span {
+                margin-bottom: 0;
+                letter-spacing: 2px;
+                font-size: 12px;
+        }
+
+        div.line-hor{
+                width: 40px;
+                margin-right: 5px;
+        }
+
+        div.boxtitolo h2 {
+        font-size: 35px;
+        letter-spacing: 5px;
+        margin-bottom: 10px;
+        }
+
+        div.boxtitolo h3 {
+        font-size: 20px;
+        letter-spacing: 3px;
+        margin-bottom: 20px;
+        }
+
+        div.boxtitolo a {
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 160px;
+                height: 40px;
+                line-height: 40px;
+        }
+
+        /* ======== CHI SIAMO ======== */
+
+        section#fascia-chi-siamo {
+                min-width: 768px;
+                margin-top: -25px;
+        }
+
+        div#sottofascia-chi-siamo {
+                width: 768px;
+                height: 550px;
+                margin: 0 auto;
+                padding: 50px 25px;
+        }
+
+        div.line-ver {
+                height: 35px;
+        }
+
+        div#sottofascia-chi-siamo h1 {
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 400;
+                letter-spacing: 4px;
+        }
+
+        div#sottofascia-chi-siamo p {
+                font-size: 14px;
+                padding: 20px;
+        }
+
+        div#sottofascia-chi-siamo a {
+                font-size: 15px;
+                letter-spacing: 1px;
+                width: 140px;
+                height: 30px;
+                line-height: 30px;
+        }
+
+        
+
+        /* ===== COLLEZIONE ====== */
+
+        section.fascia-coll {
+                width: 100%;
+                height: 384px;
+                min-width: 768px;
+        }
+
+        .descrizione-coll {
+                width: 50%;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+        }
+
+        .descrizione-coll h2 {
+                font-size: 25px;
+                letter-spacing: 2px;
+                font-weight: 400;
+                text-transform: uppercase;
+        }
+
+        .descrizione-coll p {
+                width: 100%;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                font-weight: 200;
+                text-align: center;
+        }
+
+        .descrizione-coll a {
+                font-size: 15px;
+                font-weight: 200;
+                letter-spacing: 1px;
+                width: 110px;
+                height: 30px;
+                line-height: 30px;
+        }
+
+        /* ====== BRAND ======= */
+
+        section#fascia-brand {
+                min-width: 768px;
+        }
+
+        section#fascia-brand div#sottofascia-brand {
+                width: 768px;
+                height: 600px;
+                padding: 50px 50px;
+        }
+
+        section#fascia-brand div#sottofascia-brand h2 {
+                font-size: 25px;
+                letter-spacing: 2px;
+        }
+
+        .row-brand {
+                height: 70px;
+        }
+
+        div#row-1 {
+                margin-bottom: 60px;
+        }
+
+        /* ======= NEWS ======= */
+
+        section#fascia-news {
+                min-width: 768px;
+        }
+
+        div#sottofascia-news {
+                width: 768px;
+                height: 1800px;
+                padding: 50px 25px;
+        }
+
+        #row-news {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        div#sottofascia-news h2 {
+                font-size: 30px;
+                letter-spacing: 3px;
+        }
+
+        .news-container {
+                width: 600px;
+                margin-bottom: 50px;
+        }
+
+
+        .news-img {
+                width: 300px;
+                height: 300px;
+                background-size: cover;
+        }
+
+        .news {
+                width: 300px;
+                background-color: #1e1e23;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 25px
+        }
+
+        .news span {
+                font-size: 12px;
+                margin: 0;
+        }
+
+        .news p {
+                font-size: 14px;
+        }
+
+        #sottofascia-news a#tutte-le-news {
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 200px;
+                height: 40px;
+                line-height: 40px;
+                margin-top: -70px;
+        }
+
+        /* ======= FORM ======== */
+
+        #form-container {
+                height: 200px;
+                padding: 10px;
+                display: block;
+        }
+
+        #form-title {
+                text-align: center;
+        }
+
+        #form-title h3 {
+                font-size: 27px;
+                letter-spacing: 2px;
+                margin-bottom: 5px;
+        }
+        
+        #form-title p {
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-bottom: 40px;
+        }
+
+        .checkbox-wrapper {
+                font-size: 12px;
+                padding-left: 20px;
+        }
+
+        .checkbox-wrapper .checkmark {
+                height: 12px;
+                width: 12px;
+        }
+
+        .checkbox-wrapper .checkmark::after {
+                left: 2px;
+                top: -2px;
+                width: 4px;
+                height: 8px;
+                border-width: 0 2px 2px 0;
+        }
+
+        div#form-container form input[type="email"] {
+                width: 500px;
+                height: 40px;
+                font-size: 16px;
+        }
+        
+        div#form-container form input[type="email"]::placeholder {
+                font-size: 16px;
+        }
+
+        div#form-container form input[type="submit"] {
+                width: 150px;
+                height: 40px;
+                font-size: 20px;
+                letter-spacing: 1px;
+        }
+
+        /* ============== FOOTER ============ */
+
+        footer#footer {
+                min-width: 768px;
+        }
+        
+        footer#footer div#sottofascia-footer {
+                width: 768px;
+                padding: 50px 25px;
+                justify-content: space-between;
+        }
+
+        footer#footer div#sottofascia-footer div#contatti {
+                display: flex;
+                width: 250px;
+                flex-direction: column;
+                align-items: flex-start;
+        }
+        
+        footer#footer div#sottofascia-footer div#contatti span,
+        footer#footer div#sottofascia-footer div#orari-negozio span {
+                font-size: 14px;
+        }
+        
+        footer#footer div#sottofascia-footer div#contatti h4,
+        footer#footer div#sottofascia-footer div#orari-negozio h4, 
+        .social-container h4{
+                font-size: 18px;
+        }
+
+        .social-container {
+                width: 130px;
+        }
+        
+        
+        .social-container .socials a {
+                display: block;
+                width: 25px;
+                height: 25px;
+        }
+        
+        .social-container .socials a img {
+                display: block;
+                width: 25px;
+                height: 25px;
+                transition: transform 0.5s;
+        }
+
+        .social-container img {
+                width: 130px;
+                height: 130px;
+        }
+
+        footer#footer div#sottofascia-footer div#orari-negozio {
+                width: 250px;
+        }
+
+        /* =========== LEGAL TERM ============ */
+        div#fascia-legalterm {
+                min-width: 768px;
+                background-color: #1a1a1f;
+        }
+                
+        div#fascia-legalterm div#sottofascia-legalterm {
+                width: 768px;
+                height: 20px;
+                padding: 0 25px;
+        }
+
+        div#sottofascia-legalterm a,
+        div#sottofascia-legalterm span {
+                color: #dadada;
+                font-size: 12px;
+                font-weight: 200;
+                display: block;
+        }
+
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+
+        div#fascia-menu {
+                min-width: 768px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+        }
+
+        section#fascia-banner {
+                min-width: 768px;
+        }
+        
+        div#sottofascia-banner {
+                width: 768px;
+                padding: 0 50px;
+        }
+        
+        #storia {
+                background-color: #1a1a1f;
+                height: 1820px;
+                min-width: 768px;
+        }
+        
+        #sottofascia-storia {
+                width: 768px;
+                margin: 0 auto;
+                padding: 100px 50px;
+        }
+
+        #sottofascia-storia .line-ver{
+                height: 1600px;
+        }
+
+        #fascia-2012,
+        #fascia-2020 {
+                width: 100%;
+                height: 400px;
+                padding: 20px 0;
+        }
+
+        #fascia-2015,
+        #fascia-2018 {
+                width: 100%;
+                height: 400px;
+                padding: 20px 0;
+        }
+
+        div.descrizione-annata h2 {
+                font-size: 30px;
+                margin-bottom: 10px;
+        }
+
+        div.descrizione-annata div.span {
+                margin-bottom: 10px;
+        }
+
+        div.descrizione-annata div.span div.line-hor {
+                width: 20px;
+        } 
+
+        div.descrizione-annata p {
+                font-size: 14px;
+        }
+
+        .img-annata {
+                width: 330px !important;
+                height: 280px !important;
+        }
+
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+
+        .collection-container {
+                min-width: 768px;
+        }
+
+        .collection-sottocontainer {
+                width: 768px;
+                padding: 150px 50px 50px;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .collection {
+                width: 100%;
+        }
+
+        .collection-descr {
+                margin-bottom: 100px;
+                padding: 0 22px;
+        }
+
+        .preview {
+                display: none;
+        }
+
+        .miniature {
+                justify-content: center;
+        }
+
+        .miniature a img {
+                width: 12rem;
+                height: 12rem;
+                filter: none;
+                transition: none;
+        }
+
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */      
+
+        .tuttelenews-container {
+                min-width: 768px;
+        }
+
+        .tuttelenews-sottocontainer {
+                width: 768px;
+                margin: 0 auto;
+                padding: 150px 20px 100px;
+        }
+
+        .tuttelenews-sottocontainer  div.span {
+                font-size: 14px;
+                letter-spacing: 2px;
+                margin-bottom: 5px;
+        }
+
+        .tuttelenews-sottocontainer  h1{
+                font-size: 35px;
+                letter-spacing: 2px;
+                margin-bottom: 70px;     
+        }
+
+        .tuttelenews aside {
+                width: 30%;
+                display: flex;
+                flex-direction: column;
+        }
+        
+        .novita-miniatura {
+                width: 200px;
+                margin-bottom: 30px;
+        }
+
+        .novita-miniatura img {
+                height: 120px;
+        }
+
+        .testo-miniatura h3 {
+                font-size: 16px;
+                margin-bottom: 20px;
+        }
+
+        .testo-miniatura p {
+                font-size: 14px;
+                margin-bottom: 20px;
+        }
+
+        .testo-miniatura span {
+                font-size: 12px;
+        }
+
+        .tuttelenews .notizia-aperta {
+                width: 70%;
+        }
+
+        .tuttelenews .notizia-aperta img {
+                height: 300px;
+                margin-bottom: 75px;
+        }
+
+        .titolo-autore {
+                padding: 0 30px;
+        }
+
+        .autore {
+                width: 30px;
+                height: 30px;
+        }
+
+        .tuttelenews .notizia-aperta h2 {
+                font-size: 22px;
+                margin-bottom: 30px;
+        }
+
+        .multi-column {
+                padding: 0 30px 50px;
+                font-weight: 200;
+                line-height: 18px;
+                column-gap: 30px;
+        }
+
+        .multi-column p {
+                font-size: 14px;
+        }
+
+        .multi-column hr {
+                margin-bottom: 50px;
+        }
+
+        .multi-column .italic {
+                font-size: 18px;
+        }
+}
+/* =========SMARTPHONE=======SMARTPHONE============SMARTPHONE====== */
+
+@media only screen and (max-width: 767px) {
+
+        div#fascia-promo-lingue { 
+                display: none;
+        }
+
+        /* ======== MENU ========= */
+
+        div#menu-principale {
+                display: none;
+        }
+
+        div#hamburger-menu {
+                display: block;
+        }
+
+        div#fascia-menu { 
+                min-width: 319px; 
+        }
+        div#fascia-menu div#sottofascia-menu { 
+                width: 319px; 
+                height: 50px;
+                margin: 15px auto 0;
+                padding: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        a#logo {
+                width: 50px;
+                height: 50px;
+        }
+
+        a#logo img{
+                width: 50px;
+                height: 50px;
+        }
+
+        /* Hamburger button */
+
+        .hamburger {
+                top: 22px;
+                right: 15px;
+        }
+
+        .mobile-menu ul {
+                margin: 50px 0 150px;
+        }
+
+        .mobile-menu .social-container {
+                display: none;
+        }
+
+/* ==============FINE REGOLE MENU HAMBURGER =============  */
+
+
+        /* ============= SWIPER ============ */
+
+        div.boxtitolo {
+                margin: 0 auto;
+        }
+
+        div.boxtitolo div.span {
+                font-size: 10px;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+        }
+
+        div.line-hor{
+                width: 20px;
+                height: 1px;
+                margin-right: 5px;
+        }
+
+        div.boxtitolo h2 {
+                font-size: 30px;
+                letter-spacing: 2px;
+                margin-bottom: 5px;
+        }
+
+        div.boxtitolo h3 {
+                display: none;
+        }
+
+        div.boxtitolo a {
+                font-size: 15px;
+                letter-spacing: 1px;
+                width: 120px;
+                height: 30px;
+                line-height: 30px;
+        }
+
+        /* ======== CHI SIAMO ======== */
+
+        section#fascia-chi-siamo {
+                min-width: 319px;
+                margin-top: -25px;
+        }
+
+        div#sottofascia-chi-siamo {
+                width: 319px;
+                /* height: 550px; */
+                margin: 0 auto;
+                padding: 50px 25px;
+        }
+
+        div.line-ver {
+                height: 25px;
+        }
+
+        div#sottofascia-chi-siamo h1 {
+                text-transform: uppercase;
+                font-size: 30px;
+                font-weight: 400;
+                letter-spacing: 4px;
+        }
+
+        div#sottofascia-chi-siamo p {
+                font-size: 14px;
+                padding: 20px;
+        }
+
+        div#sottofascia-chi-siamo a {
+                font-size: 15px;
+                letter-spacing: 1px;
+                width: 140px;
+                height: 30px;
+                line-height: 30px;
+                margin: 20px 0;
+        }
+
+        
+
+        /* ===== COLLEZIONE ====== */
+
+        section.fascia-coll {
+                width: 100%;
+                height: auto;
+                min-width: 319px;
+                flex-direction: column;
+        }
+
+        .descrizione-coll {
+                width: 100%;
+                height: 350px;
+                padding: 25px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+        }
+
+        section.fascia-coll.donna {
+                flex-direction: column-reverse;
+        }
+
+        .descrizione-coll h2 {
+                font-size: 25px;
+                letter-spacing: 2px;
+        }
+
+        .descrizione-coll p {
+                width: 100%;
+                font-size: 12px;
+                letter-spacing: 1px;
+                line-height: 20px;
+                font-weight: 200;
+                text-align: center;
+        }
+
+        .descrizione-coll a {
+                font-size: 15px;
+                font-weight: 200;
+                letter-spacing: 1px;
+                width: 110px;
+                height: 30px;
+                line-height: 30px;
+        }
+
+        section.fascia-coll div#bgimg-man {
+                width: 100%;
+                height: 319px;
+        }
+        section.fascia-coll div#bgimg-woman {
+                width: 100%;
+                height: 319px;
+        }
+        section.fascia-coll div#bgimg-kid {
+                width: 100%;
+                height: 319px;
+        }
+
+        /* ====== BRAND ======= */
+
+        section#fascia-brand {
+                min-width: 319px;
+        }
+
+        section#fascia-brand div#sottofascia-brand {
+                width: 319px;
+                height: 550px;
+                padding: 50px 25px;
+        }
+
+        section#fascia-brand div#sottofascia-brand h2 {
+                font-size: 25px;
+                letter-spacing: 2px;
+        }
+
+        .row-brand {
+                width: 100%;
+                height: 150px;
+                flex-wrap: wrap;
+                justify-content: space-between;
+        }
+
+        .row-brand img {
+                width: 70px;
+                height: 70px;
+        }
+
+        div#row-1 {
+                margin-bottom: 0;
+        }
+
+        div#row-2 .one {
+                order: 2;
+        }
+
+        div#row-2 .two {
+                order: 1;
+        }
+
+        /* ======= NEWS ======= */
+
+        section#fascia-news {
+                min-width: 319px;
+        }
+
+        div#sottofascia-news {
+                width: 319px;
+                height: 2200px;
+                padding: 50px 25px;
+        }
+
+        #row-news {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+        }
+
+        div#sottofascia-news h2 {
+                font-size: 25px;
+                letter-spacing: 2px;
+        }
+
+        .news-container {
+                width: 270px;
+                flex-direction: column;
+                margin-bottom: 50px;
+        }
+
+
+        .news-img {
+                width: 270px;
+                height: 270px;
+        }
+
+        .news {
+                width: 270px;
+                height: 220px;
+        }
+
+        .news span {
+                font-size: 12px;
+                margin-bottom: 10px;
+        }
+
+        .news p {
+                font-size: 14px;
+        }
+
+        #sottofascia-news a#tutte-le-news {
+                display: none;
+        }
+
+        /* ======= FORM ======== */
+
+        #form-container {
+                height: auto;
+                padding: 10px;
+                display: block;
+                margin-top: -30px;
+        }
+
+        #form-title {
+                text-align: center;
+                margin-right: 0;
+        }
+
+        #form-title h3 {
+                font-size: 20px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+        }
+        
+        #form-title p {
+                font-size: 13px;
+                letter-spacing: 1px;
+                margin-bottom: 60px;
+        }
+
+        .checkbox-wrapper {
+                font-size: 10px;
+                padding-left: 20px;
+                width: auto;
+        }
+
+        .checkbox-wrapper .checkmark {
+                height: 12px;
+                width: 12px;
+        }
+
+        .checkbox-wrapper .checkmark::after {
+                left: 2px;
+                top: -2px;
+                width: 4px;
+                height: 8px;
+                border-width: 0 2px 2px 0;
+        }
+
+        div#email-submit {
+                flex-direction: column;
+                justify-content: space-between;
+        }
+
+        div#form-container form input[type="email"] {
+                width: 100%;
+                height: 30px;
+                font-size: 13px;
+                margin: 0 0 20px 0;
+        }
+        
+        div#form-container form input[type="email"]::placeholder {
+                font-size: 13px;
+        }
+
+        div#form-container form input[type="submit"] {
+                width: 150px;
+                margin: 0 auto;
+                height: 30px;
+                font-size: 15px;
+                letter-spacing: 1px;
+        }
+
+        /* ============== FOOTER ============ */
+
+        footer#footer {
+                min-width: 319px;
+        }
+        
+        footer#footer div#sottofascia-footer {
+                width: 319px;
+                padding: 50px 25px;
+                flex-direction: column;
+                justify-content: space-between;
+        }
+
+        footer#footer div#sottofascia-footer div#contatti {
+                display: flex;
+                width: 100%;
+                flex-direction: column;
+                align-items:baseline;
+                order: 2;
+                margin-bottom: 50px;
+        }
+        
+        footer#footer div#sottofascia-footer div#contatti span,
+        footer#footer div#sottofascia-footer div#orari-negozio span {
+                font-size: 14px;
+        }
+        
+        footer#footer div#sottofascia-footer div#contatti h4,
+        footer#footer div#sottofascia-footer div#orari-negozio h4, 
+        .social-container h4{
+                font-size: 18px;
+                margin-bottom: 30px;
+        }
+
+        .social-container {
+                width: 200px;
+                margin: 0 auto;
+                order: 1;
+                margin-bottom: 50px;
+        }
+        
+        
+        .social-container .socials a {
+                display: block;
+                width: 25px;
+                height: 25px;
+        }
+        
+        .social-container .socials a img {
+                display: block;
+                width: 25px;
+                height: 25px;
+                transition: transform 0.5s;
+        }
+
+        .social-container img {
+                width: 130px;
+                height: 130px;
+        }
+
+        footer#footer div#sottofascia-footer div#orari-negozio {
+                width: 250px;
+                align-items: baseline;
+                order: 3;
+        }
+
+        /* =========== LEGAL TERM ============ */
+        div#fascia-legalterm {
+                width: 100%;
+                min-width: 319px;
+                background-color: #1a1a1f;
+        }
+                
+        div#fascia-legalterm div#sottofascia-legalterm {
+                width: 319px;
+                height: 20px;
+                padding: 0 25px;
+        }
+
+        div#sottofascia-legalterm a,
+        div#sottofascia-legalterm span {
+                color: #dadada;
+                font-size: 10px;
+                font-weight: 200;
+                display: block;
+        }
+
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+        /* CHI SIAMO -------- CHI SIAMO ----------CHI SIAMO */
+
+        div#fascia-menu {
+                min-width: 319px;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+        }
+
+        section#fascia-banner {
+                min-width: 319px;
+                margin-top: 100px;
+        }
+        
+        div#sottofascia-banner {
+                width: 319px;
+                padding: 0 20px;
+        }
+
+        div#sottofascia-banner div.span {
+                font-size: 12px;
+                letter-spacing: 1px;
+                margin-bottom: 0;
+            }
+
+        div#sottofascia-banner h2 {
+                margin-bottom: 30px;
+                font-size: 30px;
+        }
+
+        div#sottofascia-chi-siamo {
+                height: auto;
+        }
+
+        div#sottofascia-chi-siamo h1 {
+                padding: 20px 0;
+        }
+        div#sottofascia-chi-siamo p {
+                padding: 20px 0;
+        }
+        
+        #storia {
+                background-color: #1a1a1f;
+                min-width: 319px;
+                height: auto;
+        }
+        
+        #sottofascia-storia {
+                width: 319px;
+                margin: 0 auto;
+                padding: 30px 20px;
+        }
+
+        #sottofascia-storia .line-ver{
+                display: none;
+        }
+
+        #fascia-2012,
+        #fascia-2015,
+        #fascia-2018,
+        #fascia-2020 {
+                width: 100%;
+                height: auto;
+                padding: 20px 0;
+                flex-direction: column-reverse;
+                text-align: center;
+                align-items: center;
+                justify-content: space-between;
+        }
+
+        #fascia-2015,
+        #fascia-2020 {
+                flex-direction: column;
+        }
+
+        div.descrizione-annata {
+                align-items: center !important;
+                width: 100%;
+        }
+
+        div.descrizione-annata h2 {
+                font-size: 30px;
+                margin-bottom: 10px;
+        }
+
+        div.descrizione-annata div.span {
+                margin-bottom: 10px;
+                letter-spacing: 1px;
+        }
+
+        div.descrizione-annata div.span div.line-hor {
+                display: none;
+        } 
+
+        div.descrizione-annata p {
+                font-size: 14px;
+                text-align: center !important;
+        }
+
+        #fascia-2012 .img-annata, 
+        #fascia-2015 .img-annata, 
+        #fascia-2018 .img-annata, 
+        #fascia-2020 .img-annata {
+                width: 330px !important;
+                height: 280px !important;
+                margin: 20px 0;
+        }
+
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+/* =========COLLEZIONE=======COLLEZIONE============COLLEZIONE====== */
+
+        .collection-container {
+                min-width: 319px;
+        }
+
+        .collection-sottocontainer {
+                width: 319px;
+                padding: 130px 15px 15px;
+                flex-direction: column;
+                align-items: center;
+        }
+
+        .collection {
+                width: 100%;
+        }
+
+        .collection-descr {
+                margin-bottom: 50px;
+                padding: 0;
+        }
+
+        .preview {
+                display: none;
+        }
+
+        .miniature {
+                justify-content: center;
+        }
+
+        .miniature a img {
+                width: 8rem;
+                height: 8rem;
+                filter: none;
+                transition: none;
+        }
+
+        .collection-descr div.span .line-hor {
+                width: 30px;
+        }
+
+        .collection-descr div.span {
+                font-size: 12px;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+        }
+
+        .collection-descr h2{
+                font-size: 30px;
+                letter-spacing: 3px;
+                margin-bottom: 30px;     
+        }
+
+        .collection-descr p {
+                letter-spacing: 1px;
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 200;
+        }
+
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+/* =========NEWS=======NEWS============NEWS====== */
+
+        .tuttelenews-container {
+                min-width: 319px;
+        }
+
+        .tuttelenews-sottocontainer {
+                width: 319px;
+                margin: 0 auto;
+                padding: 100px 20px 100px;
+        }
+
+        .tuttelenews-sottocontainer  div.span {
+                font-size: 12px;
+                letter-spacing: 1px;
+                margin-bottom: 5px;
+        }
+        
+        .tuttelenews-sottocontainer  h1{
+                font-size: 20px;
+                letter-spacing: 1px;
+                margin-bottom: 50px;     
+        }
+
+        .tuttelenews aside {
+                display: none;
+        }
+
+        .tuttelenews .notizia-aperta {
+                width: 100%;
+                margin-bottom: 30px;
+        }
+        
+        .tuttelenews .notizia-aperta img {
+                width: 100%;
+                height: 230px;
+                margin-bottom: 30px;
+        }
+
+        .titolo-autore {
+                padding: 0 10px;
+        }
+
+        .autore {
+                width: 30px;
+                height: 30px;
+        }
+
+        .tuttelenews .notizia-aperta h2 {
+                letter-spacing: 1px;
+                font-size: 20px;
+                margin-bottom: 30px;
+        }
+
+        .multi-column {
+                -moz-column-count:1;
+                -webkit-column-count:1;
+                column-count:1;
+                column-gap:20px;
+                padding: 0 10px 20px;
+                font-weight: 200;
+                line-height: 20px;
+        }
+        
+        .multi-column p {
+                margin-bottom: 20px;
+        }
+        
+}
