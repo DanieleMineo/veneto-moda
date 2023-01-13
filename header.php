@@ -51,6 +51,7 @@
                                 </li>
                                 <li><a href="news.php" title="News" <?php if($title=="Veneto Moda | News") {echo "class=\"current\"";} ?>>news</a></li>
                                 <li><a href="contatti.php" title="Contatti" <?php if($title=="Veneto Moda | Contatti") {echo "class=\"current\"";} ?>>contatti</a></li>
+                                <li><a href="careers.php" title="Careers" <?php if($title=="Veneto Moda | Careers") {echo "class=\"current\"";} ?>>careers</a></li>
                             </ul>
                         </div>
                         <div id="hamburger-menu">
@@ -72,6 +73,7 @@
                                     </li>
                                     <li><a href="news.php" title="News">news</a></li>
                                     <li><a href="contatti.php" title="Contatti">contatti</a></li>
+                                    <li><a href="careers.php" title="Careers">contatti</a></li>
                                 </ul>
                                 <div class="lingue">
                                     <span><a href="#"><strong>IT </strong></a>| EN</span>

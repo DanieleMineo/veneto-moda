@@ -1366,6 +1366,17 @@ div.descrizione-annata div.span div.line-hor{
                 padding: 0 80px; 
         }
 
+        nav#menu ul#principale li {
+                height: 20px;
+                line-height: 20px;
+                margin-left: 30px;
+        }
+
+        nav#menu ul#principale li a {
+                font-size: 16px;
+                letter-spacing: 1px;
+        }
+
         
 
         /* ======== BOX TITOLO ======== */
@@ -3134,4 +3145,114 @@ div.descrizione-annata div.span div.line-hor{
                 margin-bottom: 20px;
         }
         
+}
+
+/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+
+#form-contatti  {
+        text-align: center;
+}
+
+#form-contatti form {
+        width: 60%;
+        background-color: #1e1e23;
+        padding: 40px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        text-align: start;
+}
+
+/* CHECKBOX STYLE */
+/* ----------------------------------------------------------- */
+
+div#checkbox {
+        text-align: left;
+        margin-bottom: 10px;
+}
+
+div#checkbox a {
+        color: #b8a076;
+}
+
+
+#form-contatti form input, 
+#form-contatti form textarea {
+        width: 100%;
+        background-color: transparent;
+        border: 1px solid #b8a076;
+        color: #dadada;
+        font-family: 'Montserrat', sans-serif;
+        letter-spacing: 1px;
+        font-size: 18px;
+        font-weight: 200;
+        padding: 12px;
+        margin-bottom: 20px;
+        outline: none;
+}
+
+div#form-container form input::placeholder {
+        color: #dadada;
+        opacity: .8;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 18px;
+        font-weight: 200;
+}
+
+#form-contatti form input:focus {
+        border: 2px solid #c1ab85;
+}
+
+/* SUBMIT STYLE */
+/* ----------------------------------------------------------- */
+
+#form-contatti form input[type="submit"] {
+        display: flex;
+        width: 200px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+        background-color: #b8a076;
+        color: #dadada;
+        border: none;
+        border-radius: 5px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 25px;
+        text-transform: uppercase;
+        font-weight: 200;
+        letter-spacing: 1px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+}
+
+#form-contatti form input[type="submit"]:hover {
+        background-color: #c1ab85;
+        cursor: pointer;
+}
+
+#form-contatti form span {
+        display: block;
+        font-size: 16px;
+        font-weight: 200;
+        margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1099px) {
+        #form-contatti form {
+                width: 90%;
+        }
+}
+
+@media only screen and (max-width: 767px) {
+        #form-contatti form {
+                width: 100%;
+        }
 }
