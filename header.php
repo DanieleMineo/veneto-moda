@@ -28,7 +28,7 @@
    <header id="header">
         <div id="fascia-promo-lingue">
             <div id="sottofascia-promo-lingue">
-                <span>BLACK FRIDAY EARLY ACCESS 18-11-2022 SOLO IN NEGOZIO</span>
+                <span>SABATO ORARIO CONTINUATO</span>
                 <div class="lingue">
                     <strong><a href="#">IT</a></strong> | <a href="#">EN</a>
                 </div>

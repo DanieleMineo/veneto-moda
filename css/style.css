@@ -3160,6 +3160,11 @@ div.descrizione-annata div.span div.line-hor{
         text-align: center;
 }
 
+#form-contatti h1,
+#form-careers h1{
+        margin-bottom: 75px;
+}
+
 #form-contatti form,
 #form-careers form {
         width: 60%;
