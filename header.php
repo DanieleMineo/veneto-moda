@@ -73,7 +73,7 @@
                                     </li>
                                     <li><a href="news.php" title="News">news</a></li>
                                     <li><a href="contatti.php" title="Contatti">contatti</a></li>
-                                    <li><a href="careers.php" title="Careers">contatti</a></li>
+                                    <li><a href="careers.php" title="Careers">careers</a></li>
                                 </ul>
                                 <div class="lingue">
                                     <span><a href="#"><strong>IT </strong></a>| EN</span>

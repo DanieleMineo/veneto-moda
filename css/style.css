@@ -1372,7 +1372,7 @@ div.descrizione-annata div.span div.line-hor{
                 margin-left: 30px;
         }
 
-        nav#menu ul#principale li a {
+        nav#menu ul#principale li a  {
                 font-size: 16px;
                 letter-spacing: 1px;
         }
@@ -3147,19 +3147,21 @@ div.descrizione-annata div.span div.line-hor{
         
 }
 
-/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
-/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
-/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
-/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
-/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
-/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
-/* ========== PAGINA CONTATTI =========== PAGINA CONTATTI ===========*/
+/* ========== PAGINA CONTATTI - CAREERS =========== PAGINA CONTATTI - CAREERS ===========*/
+/* ========== PAGINA CONTATTI - CAREERS =========== PAGINA CONTATTI - CAREERS ===========*/
+/* ========== PAGINA CONTATTI - CAREERS =========== PAGINA CONTATTI - CAREERS ===========*/
+/* ========== PAGINA CONTATTI - CAREERS =========== PAGINA CONTATTI - CAREERS ===========*/
+/* ========== PAGINA CONTATTI - CAREERS =========== PAGINA CONTATTI - CAREERS ===========*/
+/* ========== PAGINA CONTATTI - CAREERS =========== PAGINA CONTATTI - CAREERS ===========*/
+/* ========== PAGINA CONTATTI - CAREERS =========== PAGINA CONTATTI - CAREERS ===========*/
 
-#form-contatti  {
+#form-contatti,
+#form-careers  {
         text-align: center;
 }
 
-#form-contatti form {
+#form-contatti form,
+#form-careers form {
         width: 60%;
         background-color: #1e1e23;
         padding: 40px;
@@ -3184,7 +3186,8 @@ div#checkbox a {
 }
 
 
-#form-contatti form input, 
+#form-contatti form input,
+#form-careers form input,
 #form-contatti form textarea {
         width: 100%;
         background-color: transparent;
@@ -3214,7 +3217,8 @@ div#form-container form input::placeholder {
 /* SUBMIT STYLE */
 /* ----------------------------------------------------------- */
 
-#form-contatti form input[type="submit"] {
+#form-contatti form input[type="submit"],
+#form-careers form input[type="submit"] {
         display: flex;
         width: 200px;
         height: 50px;
@@ -3233,7 +3237,8 @@ div#form-container form input::placeholder {
         margin-bottom: 30px;
 }
 
-#form-contatti form input[type="submit"]:hover {
+#form-contatti form input[type="submit"]:hover,
+#form-careers form input[type="submit"]:hover {
         background-color: #c1ab85;
         cursor: pointer;
 }
@@ -3246,13 +3251,15 @@ div#form-container form input::placeholder {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1099px) {
-        #form-contatti form {
+        #form-contatti form,
+        #form-careers form {
                 width: 90%;
         }
 }
 
 @media only screen and (max-width: 767px) {
-        #form-contatti form {
+        #form-contatti form,
+        #form-careers form {
                 width: 100%;
         }
 }
