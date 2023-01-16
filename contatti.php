@@ -74,7 +74,7 @@
             </ul>
             
             ";
-            $mail -> AddAddress("stefano.pederiva@venetoformazione.it");
+            $mail -> AddAddress("daniele.mineofreetime@gmail.it");
 
             if ($mail -> Send()) {
 
