@@ -14,7 +14,7 @@
                     </div>
                     <h2 class="wow animate__animated animate__fadeInRight" data-wow-delay=".2s">veneto moda</h2>
                     <h3 class="wow animate__animated animate__fadeInRight" data-wow-delay=".2s">il vostro compagno di stile</h3>
-                    <a href="#" title="Vai a Collezione" class="wow animate__animated animate__fadeInLeft" data-wow-delay=".2s">collezione</a>
+                    <a href="man.php" title="Vai a Collezione" class="wow animate__animated animate__fadeInLeft" data-wow-delay=".2s">collezione</a>
                 </div>
               </div>
               <div class="swiper-slide" id="slide2">
@@ -24,7 +24,7 @@
                     </div>
                     <h2>veneto moda</h2>
                     <h3>il vostro compagno di stile</h3>
-                    <a href="#" title="Vai a Collezione">collezione</a>
+                    <a href="woman.php" title="Vai a Collezione">collezione</a>
                 </div>
               </div>
               <div class="swiper-slide" id="slide3">
@@ -34,7 +34,7 @@
                     </div>
                     <h2>veneto moda</h2>
                     <h3>il vostro compagno di stile</h3>
-                    <a href="#" title="Vai a Collezione">collezione</a>
+                    <a href="kid.php" title="Vai a Collezione">collezione</a>
                 </div>
               </div>
               <div class="swiper-slide" id="slide4">
@@ -44,7 +44,7 @@
                     </div>
                     <h2>veneto moda</h2>
                     <h3>il vostro compagno di stile</h3>
-                    <a href="#" title="Vai a Collezione">collezione</a>
+                    <a href="woman.php" title="Vai a Collezione">collezione</a>
                 </div>
               </div>
               <div class="swiper-slide" id="slide5">
@@ -54,7 +54,7 @@
                     </div>
                     <h2>veneto moda</h2>
                     <h3>il vostro compagno di stile</h3>
-                    <a href="#" title="Vai a Collezione">collezione</a>
+                    <a href="man.php" title="Vai a Collezione">collezione</a>
                 </div>
               </div>
             </div>
@@ -87,7 +87,7 @@
                 <div class="line-ver"></div>
                 <h2>man</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam velit a hendrerit dapibus. Nulla dictum dui eros, at facilisis ligula vulputate sit amet. Aliquam mauris magna, posuere eget neque id, pharetra luctus sem.</p>
-                <a href="#" title="Vai a Uomo">scopri</a>
+                <a href="man.php" title="Vai a Uomo">scopri</a>
                 <div class="line-ver"></div>
            </div>
        </section>
@@ -97,7 +97,7 @@
             <div class="line-ver"></div>
             <h2>woman</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam velit a hendrerit dapibus. Nulla dictum dui eros, at facilisis ligula vulputate sit amet. Aliquam mauris magna, posuere eget neque id, pharetra luctus sem.</p>
-            <a href="#" title="Vai a Donna">scopri</a>
+            <a href="woman.php" title="Vai a Donna">scopri</a>
             <div class="line-ver"></div>
            </div>
            <div id="bgimg-woman"></div>
@@ -109,7 +109,7 @@
                 <div class="line-ver"></div>
                 <h2>kid</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce aliquam velit a hendrerit dapibus. Nulla dictum dui eros, at facilisis ligula vulputate sit amet. Aliquam mauris magna, posuere eget neque id, pharetra luctus sem.</p>
-                <a href="#" title="Vai a Bambino">scopri</a>
+                <a href="kid.php" title="Vai a Bambino">scopri</a>
                 <div class="line-ver"></div>
            </div>
        </section>
@@ -177,7 +177,7 @@
                             </article>
                         </div>
                     </div>
-                    <a href="#" title="Vai a news" id="tutte-le-news">tutte le news</a>
+                    <a href="news.php" title="Vai a news" id="tutte-le-news">tutte le news</a>
                     <div id="form-container">
                         <div id="form-title">
                             <h3>ricevi tutte le news</h3>
